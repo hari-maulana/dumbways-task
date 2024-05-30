@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/styles/contact-form-styles.css">
+   <title>Contact Form</title>
+</head>
+<body>
+    <!--NAVIGATION-->
+  <nav>
+    <style>
+      nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 3.8e m;
+      background-color: rgb(255, 255, 255);
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 1em;
+      box-shadow: 0 0 7px 7px lightgray;
+      }
+  
+      nav li {
+        display: flex;
+        align-items: center;
+      }
+  
+      nav li ul {
+        margin-left: 48px;
+      }
+  
+      nav li ul a {
+        text-decoration: none;
+        color: rgb(0, 0, 100);
+        transition-duration: 0.1s;
+      }
+      nav li ul a:hover {
+        background-color: whitesmoke;
+        padding: 1.2em 3px;
+        margin: -3px;
+      }
+      /*nav li ul .home {
+        font-weight: bolder;
+      }*/
+  
+  
+      .nav-right a {
+        background-color: rgb(0, 0, 100);
+        transition-duration: 0.1s;
+        margin-right: 48px;
+        padding: 5px 14px;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+  
+      .nav-right a:hover {
+        background-color: black;
+      }
+  
+    </style>
+        <li>
+          <ul>
+            <img src="./assets/img/logo-brand.png" alt="logo">
+          </ul>
+          <ul>
+            <a href="./index.html" class="home">Home</a>
+          </ul>
+          <ul>
+            <a href="#" class="my-project">My Project</a>
+          </ul>
+        </li>
+      </div>
+      <div class="nav-right">
+        <a href="./contact-form.html">Contact Me</a>
+      </div>
+    </nav>
+    <!--NAVIGATION-->
+    <form action="">
+        <p>GET IN TOUCH</p>
+        <label for="name">Nama</label>
+        <input type="text" id="name" required> 
+        <label for="email">Email</label> 
+        <input type="email" id="email" required> 
+        <label for="phone">Phone Number</label> 
+        <input type="tel" id="phone" required> 
+        <label for="subject">Subject</label> 
+        <select id="subject">
+            <option value="frontend">Frontend Developer</option> 
+            <option value="backend">Backend Developer</option> 
+            <option value="fullstack">Fullstack Developer</option> 
+        </select> 
+        <label for="message">Your Message</label> 
+        <textarea id="message"></textarea> 
+        <input class="submit" type="submit" value="submit" onclick="submitter()">
+    </form>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
