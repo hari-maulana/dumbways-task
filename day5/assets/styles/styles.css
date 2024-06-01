@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(220, 220, 220);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  max-width: 900px;
+  background-color: white;
+  margin: 10em auto 20em auto;
+  padding: 48px 54px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 10px lightgray;
+}
+
+.left-content {
+  margin-right: 54px;
+}
+
+.intro {
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.intro h1 {
+  margin-bottom: 16px;
+}
+
+.intro p {
+  margin-bottom: 24px;
+}
+
+.intro button {
+  color: white;
+  margin-bottom: 24px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: rgb(0, 0, 100);
+}
+
+.socmed {
+  text-align: center;
+
+  font-size: 2em;
+  flex-direction: column;
+}
+
+.socmed a {
+  margin: 0.5em;
+}
+
+.card {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(220, 220, 220);
+  border: 1px solid lightgray;
+}
+
+.card img {
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 10px;
+}
+
+.card p {
+  padding-bottom: 10px;
+}
