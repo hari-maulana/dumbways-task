@@ -17,7 +17,7 @@ h1 {
   display: flex;
   max-width: 900px;
   background-color: white;
-  margin: 100px auto auto auto;
+  margin: 10em auto 20em auto;
   padding: 48px 54px;
   border-radius: 6px;
   box-shadow: 0px 0px 10px 10px lightgray;
