@@ -112,16 +112,26 @@ input[type="file"]::file-selector-button {
 }
 
 .project-list {
-    width: 100%;
+    width: 100vw;
     background-color: whitesmoke;
     display: flex;
-    justify-content:space-around;
-    padding: 100px 50px;
+    flex-direction: column;
+}
+
+.dummy-project {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.project-submitted {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
 }
 
 .project {
     max-width: 400px;
-    margin: 15px;
     box-shadow: 0 0 3px 3px lightgray;
     padding: 16px;
     border-radius: 10px;

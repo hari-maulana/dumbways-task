@@ -115,7 +115,7 @@ input[type="file"]::file-selector-button {
     width: 100%;
     background-color: whitesmoke;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     padding: 100px 50px;
 }
 
