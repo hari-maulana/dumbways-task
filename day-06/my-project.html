@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/my-project-styles.css">
+    <link rel="stylesheet" href="./assets/styles/navigation.css">
+    <title>My Project</title>
+</head>
+<body>
+    <!--NAVIGATION-->
+  <nav>
+        <li>
+          <ul>
+            <img src="./assets/img/logo-brand.png" alt="logo">
+          </ul>
+          <ul>
+            <a href="./index.html">Home</a>
+          </ul>
+          <ul>
+            <a href="#" style="font-weight: bolder;">My Project</a>
+          </ul>
+        </li>
+      </div>
+      <div class="nav-right">
+        <a href="./contact-form.html">Contact Me</a>
+      </div>
+    </nav>
+    <!--NAVIGATION-->
+    <p class="title">ADD MY PROJECT</p>
+    <form action="" onsubmit="submitProject(event)">
+      <label class="label-bold" for="project-name">Project Name<input type="text" id="input-project" name="project-name" /></label>
+      <div class="date">
+        <div class="date-left">
+          <label class="label-bold" for="start-date">Start Date<input type="date" id="start-date" name="start-date"></label>
+        </div>
+        <div class="date-right">
+          <label class="label-bold" for="end-date">End Date<input type="date" id="end-date" name="end-date"></label>
+        </div>
+      </div>
+      <label class="label-bold" for="input-description">Description<textarea name="" id="input-description"></textarea></label>
+
+      <fieldset class="input-checkbox">
+        <legend>Technologies</legend>
+<!--Checkboxes input-->
+        <div class="checkbox-left">
+          <label for="node-js"><input type="checkbox" id="node-js" name="technologies"> Node Js</label>
+          <label for="react-js"><input type="checkbox" id="react-js" name="technologies"> React Js</label>
+        </div>
+
+        <div class="checkbox-right">
+          <label for="next-js"><input type="checkbox" id="next-js" name="technologies"> Next Js</label>
+          <label for="typescript"><input type="checkbox" id="typescript" name="technologies"> TypeScript</label>
+        </div>
+
+      </fieldset>
+      
+        <label class="label-bold" for="input-image">Upload Images<input type="file" id="input-image" name="input-image" /></label>
+      <input class="submit" type="submit" value="submit">
+    </form>
+<!--LIST OF PROJECT-->
+    <div id="content" class="project-list">
+<!--DUMMY PROJECT-->
+      <div class="dummy-project">
+        <div id="project" class="project">
+          <img src=" https://i.pinimg.com/564x/a0/df/6d/a0df6d573845ba42809e325f9ac323a3.jpg">
+          <div class="project-title">
+            <h2>AI Task Integrated App</h2>
+            <p>duration: 2 month(s)</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem dolore voluptates?</p>
+          <div class="tech-list">
+            <i class="fa-brands fa-node-js" style="color: rgb(0, 0, 100);"></i>
+            <i class="fa-brands fa-js" style="color: rgb(0, 0, 100);"></i>
+            <i class="fa-brands fa-react"  style="color: rgb(0, 0, 100);"></i>
+          </div>
+          <div class="edit-del-button">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+  
+        <div id="project" class="project">
+          <img src="  https://i.pinimg.com/564x/9b/91/bc/9b91bceb0cded21f8c018152c50e3b58.jpg">
+          <div class="project-title">
+            <h2>Crypto Payment Gateway</h2>
+            <p>duration: 5 month(s)</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem dolore voluptates?</p>
+          <div class="tech-list">
+            <i class="fa-brands fa-node-js" style="color: rgb(0, 0, 100);"></i>
+            <i class="fa-brands fa-js" style="color: rgb(0, 0, 100);"></i>
+            <i class="fa-brands fa-react"  style="color: rgb(0, 0, 100);"></i>
+          </div>
+          <div class="edit-del-button">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+  
+        <div id="project" class="project">
+          <img src="https://i.pinimg.com/564x/cb/c7/6a/cbc76a054c9599cc13d5d69910029a15.jpg">
+          <div class="project-title">
+            <h2>Dumbways Mobile App</h2>
+            <p>duration: 2 month(s)</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem dolore voluptates?</p>
+          <div class="tech-list">
+            <i class="fa-brands fa-node-js" style="color: rgb(0, 0, 100);"></i>
+            <i class="fa-brands fa-js" style="color: rgb(0, 0, 100);"></i>
+            <i class="fa-brands fa-react"  style="color: rgb(0, 0, 100);"></i>
+          </div>
+          <div class="edit-del-button">
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div>
+<!--SUBMITTED PROJECT-->
+      <div class="project-submitted" id="project-submitted">
+
+      </div>
+
+     </div>
+     
+    </div>
+    <script src="./assets/js/my-project.js"></script>
+    <script src="https://kit.fontawesome.com/46c9a62c65.js" crossorigin="anonymous"></script>
+</body>
+</html>
