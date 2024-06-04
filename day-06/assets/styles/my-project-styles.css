@@ -18,10 +18,10 @@ body {
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 720px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .label-bold {
@@ -118,7 +118,7 @@ input[type="file"]::file-selector-button {
     flex-direction: column;
 }
 
-.dummy-project {
+.dummy-project {flex-direction: row;
     display: flex;
     justify-content: space-evenly;
     margin-top: 80px;
@@ -182,3 +182,16 @@ input[type="file"]::file-selector-button {
 
 }
 
+@media (max-width: 600px) {
+    .dummy-project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project {
+        margin: 7.5px 15px;
+    }
+    form {
+        padding: 0 15px;
+    }
+    
+}

@@ -7,6 +7,9 @@
 body {
     background-color: rgb(220, 220, 220);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
 }
 
 p {
@@ -17,10 +20,11 @@ p {
 }
 
 form {
-    max-width: 600px;
+    width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding: 0 15px;
 }
 
 label {

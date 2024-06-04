@@ -9,23 +9,29 @@
 </head>
 <body>
     <!--NAVIGATION-->
-  <nav>
-        <li>
-          <ul>
-            <img src="./assets/img/logo-brand.png" alt="logo">
-          </ul>
-          <ul>
-            <a href="./index.html">Home</a>
-          </ul>
-          <ul>
-            <a href="#" style="font-weight: bolder;">My Project</a>
-          </ul>
-        </li>
-      </div>
-      <div class="nav-right">
-        <a href="./contact-form.html">Contact Me</a>
-      </div>
+    <nav>
+      <li>
+        <ul>
+          <img src="./assets/img/logo-brand.png" alt="logo">
+        </ul>
+        <ul>
+          <a href="./index.html" class="home">Home</a>
+        </ul>
+        <ul>
+          <a href="./my-project.html" class="my-project">My Project</a>
+        </ul>
+      </li>
+    </div>
+    <div class="nav-right">
+      <a href="./contact-form.html" class="contact-me">Contact Me</a>
+      <a href="#" class="burger-bar" id="burger-bar"><i class="fa-solid fa-bars" onclick="openHamburger()"></i></a>
+    </div>   
     </nav>
+    <div class="hamburger-nav" id="hamburger-nav">
+    <a href="./index.html">Home</a>
+    <a href="./my-project.html">My Project</a>
+    <a href="./contact-form.html">Contact Me</a>
+    </div>
     <!--NAVIGATION-->
     <p class="title">ADD MY PROJECT</p>
     <form action="" onsubmit="submitProject(event)">
@@ -124,6 +130,7 @@
      </div>
      
     </div>
+    <script src="./assets/js/navigation.js"></script>
     <script src="./assets/js/my-project.js"></script>
     <script src="https://kit.fontawesome.com/46c9a62c65.js" crossorigin="anonymous"></script>
 </body>

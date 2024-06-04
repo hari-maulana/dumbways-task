@@ -47,13 +47,13 @@ nav {
   .nav-right .contact-me {
     background-color: rgb(0, 0, 100);
     transition-duration: 0.1s;
-    padding: 5px 14px;
+    padding: 8px 16px;
     color: white;
     border-radius: 6px;
     text-decoration: none;
   }
 
-  .nav-right a:hover {
+  .nav-right .contact-me:hover {
     background-color: black;
   }
 
@@ -72,25 +72,24 @@ nav {
       cursor: pointer;
     }
     .hamburger-nav {
+      display: none;
       height: max-content;
-      background-color: rgb(0, 0, 100);
+      background-color: rgb(170, 187, 203);
       position: fixed;
-      top: 80px;
-      width: 50vw;
+      top: 70px;
+      width: 100vw;
       text-align: center;
       align-self: self-end;
-      border-radius: 10px 0 0 10px;
     }
     .hamburger-nav a {
       display: block;
-      color: white;
+      color: black;
       text-decoration: none;
       padding: 0.7em;
       margin: 0.4em;
-      border: 1px solid white;
     }
     .hamburger-nav a:hover {
-      background-color: black;
+      background-color: white;
     }
 
   }
