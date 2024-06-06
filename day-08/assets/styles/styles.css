@@ -27,18 +27,25 @@ h1 {
   border-radius: 6px;
   box-shadow: 0px 0px 10px 10px lightgray;
   justify-content: space-between;
+  padding-bottom: 3%;
 }
 
 .left-content {
-  padding: 48px 36px;
+width: fit-content;
+margin: 3%;
 }
 
 .right-content {
-  margin: 48px 36px;
+  margin: auto 3%;
 }
 
 .intro {
   text-align: justify;
+}
+
+.intro .active {
+  display: flex;
+  flex-direction: column;
 }
 
 .intro h1 {
@@ -56,17 +63,19 @@ h1 {
   border-radius: 20px;
   font-weight: bold;
   background-color: rgb(0, 0, 100);
+  width: 100px;
 }
 
+
 .socmed {
+  width: 100%;
+  font-size: 2em;
   text-align: center;
 
-  font-size: 2em;
-  flex-direction: column;
 }
 
 .socmed a {
-  margin: 0.5em;
+  margin: 0 2%;
 }
 
 .card {
@@ -92,4 +101,9 @@ h1 {
     flex-direction: column;
     margin: 85px 15px;
   }
+  .intro .active {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
 }
