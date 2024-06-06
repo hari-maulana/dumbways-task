@@ -11,14 +11,41 @@ body {
 
 .container {
   margin-top: 140px;
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.star-rating {
+  margin: 33px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  flex-wrap: wrap;
+  
+}
+
+.star-rating button {
+  padding: 0.7% 3%;
+  color: white;
+  background-color: rgb(0, 0, 100);
+  border: none;
+  cursor: pointer;
+  margin: 0.3em;
+}
+
+
 .testimonials {
-  margin-top: 60px;
+  margin-top: 0px;
   display: flex;
   flex-wrap: wrap;
   padding: 8px;
@@ -29,7 +56,7 @@ h2 {
 
 .testimonial {
   width: min-content;
-  height: 340px;
+  height:min-content;
   margin: 8px;
   background-color: white;
   border-radius: 2px;
@@ -39,14 +66,25 @@ h2 {
 
 .testimonial img {
   object-fit: cover;
-  width: 360px;
+  width: 320px;
   height: 220px;
+  margin-bottom: 0.5em;
+}
+
+
+.testimonial h4 {
+  margin-top: 1em;
+  text-align: end;
 }
 
 .testimonial p {
-  margin-bottom: 1em;
+  margin-top: 1em;
+  text-align: end;
 }
 
-h3 {
-  text-align: end;
+@media (max-width: 600px) {
+  .star-rating {
+    justify-content: center;
+  }
+  
 }
