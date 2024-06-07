@@ -33,7 +33,6 @@
   <div class="hamburger-nav" id="hamburger-nav">
   <a href="./index.html">Home</a>
   <a href="./my-project.html">My Project</a>
-  <a href="./testimonials.html">Testimonials</a>
   <a href="./contact-form.html">Contact Me</a>
   <a href="./testimonials.html">Testimonials</a>
   </div>
@@ -43,40 +42,26 @@
     <h3>Rating By Star</h3>
 <!--RATING-->
     <div class="star-rating">
-      <button>All</button>
-      <button>1 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
-      <button>2 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
-      <button>3 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
-      <button>4 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
-      <button>5 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="allTesti()">All</button>
+      <button onclick="testimonialFilter(1)">1 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="testimonialFilter(2)">2 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="testimonialFilter(3)">3 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="testimonialFilter(4)">4 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="testimonialFilter(5)">5 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
     </div>
 
 
 
 <!--TESTIMONIALS-->
-    <div class="testimonials">
-      <div class="testimonial">
-        <img src="https://media.istockphoto.com/id/1148380353/photo/portrait-of-a-successful-malay-muslim-man.jpg?s=612x612&w=0&k=20&c=78PrEoXXZcpRQf8qDF0L_bfDj804gzosIz2C_c9xflM=" alt="">
-        <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</i>
-        <h4>- Nas Ipaddang</h4>
-        <p>5 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
-      </div>
-      <div class="testimonial">
-        <img src="https://media.istockphoto.com/id/1288538088/photo/portrait-young-confident-smart-asian-businessman-look-at-camera-and-smile.jpg?s=612x612&w=0&k=20&c=qkOwVHZFC-fbtbTnufVGaXFhnQBcfEjzbu5ThSXVLR0=" alt="">
-        <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</i>
-        <h4>- Pish Anggor Eng</h4>
-        <p>5 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
-      </div>
-      <div class="testimonial">
-        <img src="https://www.shutterstock.com/image-photo/portrait-sexy-smiling-male-model-600nw-439389172.jpg" alt="">
-        <i>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</i>
-        <h4>- Bersheen Batchuck</h4>
-        <p>5 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
-      </div>
+    <div class="testimonials" id="testimonials">
+      
+      <!--CONTENT HERE-->
+
     </div>
   </div>
     
     <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/testimonials.js"></script>
     <script src="https://kit.fontawesome.com/46c9a62c65.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -88,3 +88,11 @@ h3 {
   }
   
 }
+@media (max-width: 500px) {
+  .testimonial img {
+    width: 288px;
+    height: 198px;
+  }
+
+  
+}
