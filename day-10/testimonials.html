@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/testimonials.css">
+    <link rel="stylesheet" href="./assets/styles/navigation.css">
+    <title>Home</title>
+</head>
+<body>
+  <!--NAVIGATION-->
+  <nav>
+    <li>
+      <ul>
+        <img src="./assets/img/logo-brand.png" alt="logo">
+      </ul>
+      <ul>
+        <a href="./index.html" class="nav-home" id="nav-home">Home</a>
+      </ul>
+      <ul>
+        <a href="./my-project.html" class="nav-project" id="nav-project">My Project</a>
+      </ul>
+      <ul>
+        <a href="./testimonials.html" class="nav-testimonials" id="nav-testimonials" style="font-weight: bolder;">Testimonials</a>
+      </ul>
+    </li>
+  </div>
+  <div class="nav-right">
+    <a href="./contact-form.html" class="contact-me">Contact Me</a>
+    <a href="#" class="burger-bar" id="burger-bar"><i class="fa-solid fa-bars" onclick="openHamburger()"></i></a>
+  </div>   
+  </nav>
+  <div class="hamburger-nav" id="hamburger-nav">
+  <a href="./index.html">Home</a>
+  <a href="./my-project.html">My Project</a>
+  <a href="./contact-form.html">Contact Me</a>
+  <a href="./testimonials.html">Testimonials</a>
+  </div>
+<!--NAVIGATION-->
+  <div class="container">
+    <h2>MY TESTIMONIALS</h2>
+    <h3>Rating By Star</h3>
+<!--RATING-->
+    <div class="star-rating">
+      <button onclick="allTesti()">All</button>
+      <button onclick="testimonialFilter(1)">1 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="testimonialFilter(2)">2 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="testimonialFilter(3)">3 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="testimonialFilter(4)">4 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+      <button onclick="testimonialFilter(5)">5 <i class="fa-solid fa-star" style="color: #FFD43B;"></i></button>
+    </div>
+
+
+
+<!--TESTIMONIALS-->
+    <div class="testimonials" id="testimonials">
+      
+      <!--CONTENT HERE-->
+
+    </div>
+  </div>
+    
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/testimonials.js"></script>
+    <script src="https://kit.fontawesome.com/46c9a62c65.js" crossorigin="anonymous"></script>
+</body>
+</html>

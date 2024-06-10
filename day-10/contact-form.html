@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/styles/contact-form-styles.css">
+   <link rel="stylesheet" href="./assets/styles/navigation.css">
+   <title>Contact Form</title>
+</head>
+<body>
+    <!--NAVIGATION-->
+  <nav>
+    <li>
+      <ul>
+        <img src="./assets/img/logo-brand.png" alt="logo">
+      </ul>
+      <ul>
+        <a href="./index.html" class="nav-home" id="nav-home">Home</a>
+      </ul>
+      <ul>
+        <a href="./my-project.html" class="nav-project" id="nav-project">My Project</a>
+      </ul>
+      <ul>
+        <a href="./testimonials.html" class="nav-testimonials" id="nav-testimonials">Testimonials</a>
+      </ul>
+    </li>
+  </div>
+  <div class="nav-right">
+    <a href="./contact-form.html" class="contact-me">Contact Me</a>
+    <a href="#" class="burger-bar" id="burger-bar"><i class="fa-solid fa-bars" onclick="openHamburger()"></i></a>
+  </div>   
+  </nav>
+  <div class="hamburger-nav" id="hamburger-nav">
+  <a href="./index.html">Home</a>
+  <a href="./my-project.html">My Project</a>
+  <a href="./contact-form.html">Contact Me</a>
+  <a href="./testimonials.html">Testimonials</a>
+  </div>
+  <!--NAVIGATION-->
+    <form action="">
+        <p>GET IN TOUCH</p>
+        <label for="name">Name</label>
+        <input type="text" id="name" required> 
+        <label for="email">Email</label>
+        <input type="email" id="email"> 
+        <label for="phone">Phone Number</label> 
+        <input type="tel" id="phone" name="phone" placeholder="12345678" pattern="[0-9]" required>
+        <label for="subject">Subject</label> 
+        <select id="subject">
+            <option value="frontend">Frontend Developer</option> 
+            <option value="backend">Backend Developer</option> 
+            <option value="fullstack">Fullstack Developer</option>
+        </select>
+        <label for="message">Your Message</label>
+        <textarea id="message"></textarea>
+        <input class="submit" type="submit" value="submit" onclick="submitter()">
+    </form>
+    <script src="./assets/js/contact-form.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="https://kit.fontawesome.com/46c9a62c65.js" crossorigin="anonymous"></script>
+</body>
+</html>
