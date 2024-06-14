@@ -3,61 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link rel="stylesheet" href="./assets/styles/navigation.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/styles.css"> -->
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Home</title>
 </head>
-<body>
+<body class="">
   <!--NAVIGATION-->
-  <nav>
-    <li>
-      <ul>
-        <img src="./assets/img/logo-brand.png" alt="logo">
-      </ul>
-      <ul>
-        <a href="./index.html" class="nav-home" id="nav-home" style="font-weight: bolder;">Home</a>
-      </ul>
-      <ul>
-        <a href="./my-project.html" class="nav-project" id="nav-project">My Project</a>
-      </ul>
-      <ul>
-        <a href="./testimonials.html" class="nav-testimonials" id="nav-testimonials">Testimonials</a>
-      </ul>
-    </li>
-  </div>
-  <div class="nav-right">
-    <a href="./contact-form.html" class="contact-me">Contact Me</a>
-    <a href="#" class="burger-bar" id="burger-bar"><i class="fa-solid fa-bars" onclick="openHamburger()"></i></a>
-  </div>   
+  <nav class="navbar navbar-expand-lg" style="background-color: rgb(0, 0, 150);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./assets/img/logo-brand.png" alt=""></a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./my-project.html">Add Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="./testimonials.html">Testimonials</a>
+          </li>
+        </ul>
+          <a href="./contact-form.html" class="btn btn-outline-light" type="submit">Contact</a>
+      </div>
+    </div>
   </nav>
-  <div class="hamburger-nav" id="hamburger-nav">
-  <a href="./index.html">Home</a>
-  <a href="./my-project.html">My Project</a>
-  <a href="./contact-form.html">Contact Me</a>
-  <a href="./testimonials.html">Testimonials</a>
-  </div>
   <!--NAVIGATION-->
-    <div class="container">
-
-      <div class="main">
-          <div class="left-content">
+    <div class="container" style="margin: 6% auto;">
+      <div class="row border rounded-3 bg-light shadow" style="padding: 2%;">
+          <div class="col-lg-8">
               <div class="intro">
                   <h1>Hi, Welcome to my hut!</h1>
                   <p>Cupcake ipsum dolor. Sit amet marshmallow topping cheesecake muffin. Halvah croissant candy canes bonbon candy. Apple pie jelly beans topping carrot cake danish tart cake cheesecake. Muffin danish chocolate soufflé pastry icing bonbon oat cake. Powder cake jujubes oat cake. Lemon drops tootsie roll marshmallow halvah carrot cake. Chiffon cake, and sponge cake just next to a croissant bake. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam qui eius, debitis voluptas quam sed minima veniam magnam aliquam consectetur quis, atque ullam dolores porro placeat necessitatibus, aperiam sequi adipisci.</p>
-                  <div class="active">
-                    <button>contact</button>
-                    <p class="download-link">Download CV <a href="blank"><i class="fa-solid fa-download fa-xl" style="color: rgb(0, 0, 100);"></i></a></p>
+                  <div class="d-flex justify-content-between mb-4 mt-4">
+                    <button class="btn btn-danger col-lg-2" style="height: min-content;">contact</button>
+                    <p class="btn col-lg-3" style="height: min-content;">Download CV <a href="blank"><i class="fa-solid fa-download fa-xl" style="color: rgb(0, 0, 150);"></i></a></p>
                   </div>
               </div>
-              <div class="socmed">
-                  <a href="https://instagram.com"><i class="fa-brands fa-instagram" style="color: rgb(0, 0, 100);"></i></a>
-                  <a href="https://twitter.com"><i class="fa-brands fa-x-twitter" style="color: rgb(0, 0, 100);"></i></a>
-                  <a href="https://linkedin.com"><i class="fa-brands fa-linkedin" style="color: rgb(0, 0, 100);" ></i></a>
-                  <a href="https://github.com"><i class="fa-brands fa-github" style="color: rgb(0, 0, 100);"></i></a>
+              <div class="btn col-12" style="font-size: 2.2rem;">
+                  <a href="https://instagram.com"><i class="fa-brands fa-instagram" style="color: #000096; margin: 3%;"></i></a>
+                  <a href="https://twitter.com"><i class="fa-brands fa-x-twitter" style="color: #000096; margin: 3%"></i></a>
+                  <a href="https://linkedin.com"><i class="fa-brands fa-linkedin" style="color: #000096; margin: 3%" ></i></a>
+                  <a href="https://github.com"><i class="fa-brands fa-github" style="color: #000096; margin: 3%"></i></a>
               </div>
           </div>
-          <div class="right-content">
-              <div class="card">
+          <div class="col-lg-4 d-flex justify-content-lg-end justify-content-center" style="background-color: none;">
+            <!-- lg disini bisa  dipakai dimanapun -->
+              <div class="card" style="width: fit-content; text-align: center;">
                   <img src="./assets/img/photo.jpg" alt="profile picture" width="280px">
                   <h2>Hari Maulana</h2>
                   <p>Fullstack Developer</p>               
@@ -65,7 +61,72 @@
             </div>              
       </div>
     </div>
-    <script src="./assets/js/navigation.js"></script>
+
+<!--LIST OF PROJECT-->
+<div id="content" class="bg-secondary">
+  <!--DUMMY PROJECT-->
+        <div class="d-flex flex-wrap justify-content-around">
+          <div id="project" class="card col-lg-3" style="padding: 16px; width: 400px; margin: 2%;">
+            <img src=" https://i.pinimg.com/564x/a0/df/6d/a0df6d573845ba42809e325f9ac323a3.jpg">
+            <div class="project-title">
+              <h2>AI Task Integrated App</h2>
+              <p>duration: 2 month(s)</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem dolore voluptates?</p>
+            <div class="mb-3" style="font-size: 2rem;">
+              <i class="fa-brands fa-node-js" style="color: rgb(0, 0, 150);"></i>
+              <i class="fa-brands fa-js" style="color: rgb(0, 0, 150);"></i>
+              <i class="fa-brands fa-react"  style="color: rgb(0, 0, 150);"></i>
+            </div>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-danger col-lg-5">Edit</button>
+              <button class="btn btn-danger col-lg-5">Delete</button>
+            </div>
+          </div>
+    
+          <div id="project" class="card card col-lg-3" style="padding: 16px; width: 400px; margin: 2%;">
+            <img src="  https://i.pinimg.com/564x/9b/91/bc/9b91bceb0cded21f8c018152c50e3b58.jpg">
+            <div class="project-title">
+              <h2>Crypto Payment</h2>
+              <p>duration: 5 month(s)</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem dolore voluptates?</p>
+            <div class="mb-3" style="font-size: 2rem;">
+              <i class="fa-brands fa-node-js" style="color: rgb(0, 0, 150);"></i>
+              <i class="fa-brands fa-js" style="color: rgb(0, 0, 150);"></i>
+              <i class="fa-brands fa-react"  style="color: rgb(0, 0, 150);"></i>
+            </div>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-danger col-lg-5">Edit</button>
+              <button class="btn btn-danger col-lg-5">Delete</button>
+            </div>
+          </div>
+    
+          <div id="project" class="card card col-lg-3" style="padding: 16px; width: 400px; margin: 2%;">
+            <img src="https://i.pinimg.com/564x/cb/c7/6a/cbc76a054c9599cc13d5d69910029a15.jpg">
+            <div class="project-title">
+              <h2>Dumbways Mobile App</h2>
+              <p>duration: 2 month(s)</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi exercitationem dolore voluptates?</p>
+            <div class="mb-3" style="font-size: 2rem;">
+              <i class="fa-brands fa-node-js" style="color: rgb(0, 0, 150);"></i>
+              <i class="fa-brands fa-js" style="color: rgb(0, 0, 150);"></i>
+              <i class="fa-brands fa-react"  style="color: rgb(0, 0, 150);"></i>
+            </div>
+            <div class="d-flex justify-content-between">
+              <button class="btn btn-danger col-lg-5">Edit</button>
+              <button class="btn btn-danger col-lg-5">Delete</button>
+            </div>
+          </div>
+        </div>
+  <!--SUBMITTED PROJECT-->
+        <div class="project-submitted" id="project-submitted">
+  
+        </div>
+  
+       </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/46c9a62c65.js" crossorigin="anonymous"></script>
 </body>
 </html>
