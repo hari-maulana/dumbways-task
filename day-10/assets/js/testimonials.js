@@ -29,11 +29,11 @@ async function allTesti() {
     let testimonialHtml = ``;
 
     response.forEach((item) => {
-      testimonialHtml += `<div class="testimonial">
-        <img src="${item.image}" alt="picture">
-        <i>${item.content}</i>
-        <h4>- ${item.author}</h4>
-        <p>${item.rating} <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
+      testimonialHtml += `<div class="card col-md-3 m-3 p-2 d-flex flex-column">
+        <img src="${item.image}" alt="picture" class="mb-3">
+        <i class="mb-3">${item.content}</i>
+        <h5 class="mb-3 align-self-end">- ${item.author}</h5>
+        <p class="mb-3 align-self-end">${item.rating} <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
       </div>`;
     });
     //console.log(testimonialHtml);
@@ -60,11 +60,11 @@ async function testimonialFilter(ratingHTML) {
     testimonialHTML = `<h1>Data Not Found</h1>`;
   } else {
     testimonialFilter.forEach((filteredItem) => {
-      testimonialHTML += `<div class="testimonial">
-        <img src="${filteredItem.image}" alt="picture">
-        <i>${filteredItem.content}</i>
-        <h4>- ${filteredItem.author}</h4>
-        <p>${filteredItem.rating} <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
+      testimonialHTML += `<div class="card col-md-3 m-3 p-2 d-flex flex-column">
+        <img src="${filteredItem.image}" alt="picture" class="mb-3">
+        <i class="mb-3">${filteredItem.content}</i>
+        <h5 class="mb-3 align-self-end">- ${filteredItem.author}</h5>
+        <p class="mb-3 align-self-end">${filteredItem.rating} <i class="fa-solid fa-star" style="color: #FFD43B;"></i></p>
       </div>`;
     });
   }
