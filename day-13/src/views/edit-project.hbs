@@ -1,0 +1,11 @@
+<!-- edit-project.hbs -->
+<form action="/update-project" method="POST">
+    <input type="hidden" name="id" value="{{id}}">
+    <label for="projectName">Project Name:</label>
+    <input type="text" id="projectName" name="projectName" value="{{project.projectName}}" required>
+    
+    <label for="inputDescription">Description:</label>
+    <textarea id="inputDescription" name="inputDescription" required>{{project.inputDescription}}</textarea>
+    
+    <button type="submit">Update Project</button>
+</form>

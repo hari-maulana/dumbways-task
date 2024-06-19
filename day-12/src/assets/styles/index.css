@@ -1,0 +1,22 @@
+.active{
+    font-weight: bolder !important;
+}
+
+.btn-danger:hover{
+     background-color: white !important;
+     color: #000096 !important;
+
+}
+.btn-danger{
+     border-color: #000096 !important;
+     background-color: #000096 !important;
+}
+
+textarea{
+    resize: none;
+}
+
+.masthead {
+    background-size: cover;
+    min-height: 100vh;
+}
