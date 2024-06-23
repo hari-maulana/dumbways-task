@@ -8,6 +8,8 @@ function duration() {
     const inWeeks = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24 * 7));
     const inMonths = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24 * 7 * 4));
     
+
+    console.log(endDate);
     if (30 >= inDays > 7) {
         return `${inWeeks} week(s)`;
     } else if (inWeeks > 4) {

@@ -15,6 +15,15 @@ module.exports = {
       inputDescription: {
         type: Sequelize.STRING
       },
+      startDate: {
+        type: Sequelize.DATE
+      },
+      endDate: {
+        type: Sequelize.DATE
+      },
+      duration: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

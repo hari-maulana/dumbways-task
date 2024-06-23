@@ -3,7 +3,6 @@ function duration() {
     const endDate = new Date(document.getElementById("end-date").value);
 
     // console.log(inputName);
-    console.log(startDate);
     const differenceInMilliseconds = endDate - startDate;
     const inDays = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24));
     const inWeeks = Math.floor(differenceInMilliseconds / (1000 * 60 * 60 * 24 * 7));
